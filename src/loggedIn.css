@@ -1,0 +1,67 @@
+.conference {
+	display: flex;
+	margin: 18px auto;
+	border-radius: 8px;
+	align-items: center;
+	width: 95%;
+	min-height: 88vh;
+	background: #f6f6f6;
+}
+
+.formclass {
+	float: right;
+	margin: 0 auto;
+}
+.details {
+	background: rgb(179, 173, 173);
+	padding: 20px;
+	font-weight: bold;
+	border-radius: 8px;
+	color: rgb(24, 22, 22);
+	align-items: center;
+	text-align: center;
+}
+.details input {
+	background: #fff;
+	width: 80%;
+	border-radius: 8px;
+	padding: 0.4em;
+	font-weight: 800;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+input[type="text"]:hover,
+input[type="date"]:hover,
+input[type="time"]:hover {
+	background: #f6f6f6;
+	cursor: pointer;
+}
+.submit {
+	padding: 20px;
+	text-align: center;
+}
+
+input[type="submit"] {
+	border-radius: 8px;
+	font-size: 1em;
+	color: rgb(255, 255, 255);
+	width: 180px;
+	height: 40px;
+	border: none;
+	background: #294bda;
+	cursor: pointer;
+}
+input[type="submit"]:hover {
+	background: #000;
+	font-size: 1.1em;
+}
+.content-main {
+	padding: 20px;
+}
+.content-main h1 {
+	font-size: 3em;
+	margin-bottom: 20px;
+}
+.content-main p {
+	font-size: 1.5em;
+}

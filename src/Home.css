@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800");
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+}
+button {
+	font-family: "Poppins", sans-serif;
+}
+
+.logo-container,
+.nav-links,
+.cart {
+	display: flex;
+}
+
+.logo-container {
+	flex: 1;
+}
+.logo {
+	font-weight: 400;
+	margin: 5px;
+}
+nav {
+	flex: 2;
+}
+.nav-links {
+	justify-content: space-around;
+	list-style: none;
+}
+.nav-link {
+	color: #5f5f79;
+	font-size: 18px;
+	text-decoration: none;
+}
+.presentation {
+	display: flex;
+	width: 95%;
+	margin: auto;
+	min-height: 80vh;
+	align-items: center;
+	margin-bottom: 10vh;
+}
+.introduction {
+	flex: 1;
+}
+.intro-text h1 {
+	font-size: 60px;
+	font-weight: 800;
+	background: linear-gradient(to right, #3a3a41, #3a3a3d);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.intro-text p {
+	margin-top: 5px;
+	font-size: 22px;
+	color: #000000;
+}
+.cta {
+	padding: 50px 0px 0px 0px;
+}
+.cta-select {
+	border: 2px solid #294bda;
+	background: transparent;
+	color: #294bda;
+	border-radius: 8px;
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 16px;
+}
+.cta-add {
+	background: #294bda;
+	width: 150px;
+	border-radius: 8px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 16px;
+	border: none;
+	color: white;
+	margin: 30px 0px 0px 30px;
+}
+.cta-add:hover,
+.cta-select:hover {
+	background: #000000;
+	border: none;
+	color: #ffffff;
+	filter: drop-shadow(0px 2px 3px rgb(88, 84, 105));
+}
+
+.cover {
+	flex: 0;
+	display: flex;
+	justify-content: center;
+	height: 60vh;
+}
+.cover img {
+	height: 100%;
+
+	filter: drop-shadow(0px 3px 4px rgb(16, 15, 19));
+	animation: drop 1.5s ease;
+}
+
+.big-circle {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	z-index: -1;
+	opacity: 0.5;
+	height: 80%;
+}
+.medium-circle {
+	position: fixed;
+	top: 30%;
+	right: 30%;
+	z-index: -1;
+	height: 60%;
+	opacity: 0.4;
+}
+.small-circle {
+	position: fixed;
+	bottom: 0%;
+	left: 20%;
+	height: 100%;
+	z-index: -1;
+}
+
+.laptop-select {
+	width: 15%;
+	display: flex;
+	justify-content: space-around;
+	position: absolute;
+	right: 20%;
+}
+
+@keyframes drop {
+	0% {
+		opacity: 0;
+		transform: translateY(-80px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.presentation {
+		flex-direction: column;
+	}
+	.introduction {
+		margin-top: 5vh;
+		text-align: center;
+	}
+	.intro-text h1 {
+		font-size: 30px;
+	}
+	.intro-text p {
+		font-size: 18px;
+	}
+	.cta {
+		padding: 10px 0px 0px 0px;
+	}
+	.laptop-select {
+		bottom: 5%;
+		right: 50%;
+		width: 50%;
+		transform: translate(50%, 5%);
+	}
+	.cover img {
+		height: 80%;
+	}
+	.small-circle,
+	.medium-circle,
+	.big-circle {
+		opacity: 0.2;
+	}
+}
+
+.gear {
+	align-items: center;
+}
+.gear h2 {
+	text-align: center;
+	font-size: 2.5em;
+	margin-bottom: 10px;
+}
+.cen {
+	width: 95%;
+	align-items: center;
+	margin: auto;
+	overflow: hidden;
+
+	padding: 20px;
+	margin-bottom: 10vh;
+}
+.cen h2 {
+	text-align: center;
+	font-size: 60px;
+	color: #ffffff;
+	margin-bottom: 1em;
+}
+.services {
+	width: 95%;
+	align-items: center;
+	margin: auto;
+	border-radius: 8px;
+
+	background: #354cd1;
+	text-align: center;
+}
+
+.services h1 {
+	display: inline-block;
+	text-transform: uppercase;
+	border-bottom: 4px solid #3498db;
+	font-size: 36px;
+	padding-bottom: 10px;
+	margin-top: 40px;
+}
+
+.service {
+	display: inline-block;
+	width: calc(100% / 3);
+	border-radius: 8px;
+	margin: 10px -2px 50px -2px;
+	padding: 20px;
+	box-sizing: border-box;
+	cursor: pointer;
+
+	transition: 0.2s;
+}
+.service:hover {
+	background: rgb(24, 23, 23);
+}
+.service i {
+	color: #3498db;
+	font-size: 34px;
+
+	margin-bottom: 30px;
+}
+.service h2 {
+	text-align: center;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin: 0;
+}
+.service p {
+	text-align: center;
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: 500;
+}
+footer {
+	background-color: rgb(48, 46, 46);
+	border-radius: 5px;
+	width: 95%;
+	padding: 10px;
+	display: flex;
+	min-height: 10vh;
+	margin: auto;
+	align-items: center;
+}
+.heading p {
+	color: #ffffff;
+}
+.primary p {
+	color: #ffffff;
+	display: inline;
+	float: right;
+}
+.heading-item right {
+	display: inline;
+	float: right;
+}

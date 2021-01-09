@@ -1,0 +1,29 @@
+.form-boss {
+    display: flex;
+    background: #fefefe;
+    width: 95%;
+    margin: auto;
+    margin-top: 3em;
+}
+
+.form-boss>.signin-form {
+    display: flex;
+    width: 50%;
+    background: rgb(223, 219, 219);
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 100px 10px 8px #fefefe;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+label {
+    display: block;
+
+}

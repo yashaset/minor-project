@@ -1,0 +1,29 @@
+* {
+	box-sizing: border-box;
+}
+a.logo {
+	text-decoration: none;
+	display: flex;
+	flex: 1;
+	float: left;
+	text-align: left;
+	font-size: 2em;
+	font-weight: 800;
+}
+
+nav {
+	display: flex;
+	margin: auto;
+	border-radius: 8px;
+	align-items: center;
+	min-height: 10vh;
+	width: 95%;
+	background: #294bda;
+}
+
+nav ul li {
+	float: right;
+	padding: 8px;
+	margin: 8px;
+	display: inline;
+}
